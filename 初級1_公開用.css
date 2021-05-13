@@ -1,0 +1,177 @@
+body{
+  font-family:'Raleway';
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style:none;
+}
+
+.title{
+  margin:0 auto 36px 0;
+}
+
+header{
+  max-width:1000px;
+  border-bottom:1px solid gray;
+  padding:30px 0 26px 0;
+  margin:0 auto 50px auto;
+}
+header h1{
+  font-size:24px;
+  text-align:center;
+  margin:0;
+}
+.wrapper{
+  display:flex;
+  align-items:start;
+  justify-content: space-between;
+  max-width:800px;
+  margin:0 auto;
+}
+.menu,.login{
+  display:flex;
+  margin:0;
+  padding:0;
+}
+.menu li{
+  margin-right:14px;
+  font-size:12px;
+}
+.menu li a,.login a{
+  color:black;
+}
+.login li{
+  margin-left:14px;
+  font-size:12px;
+}
+
+main{
+  margin-bottom:100px;
+}
+.contents-left{
+  margin-right:60px;
+  max-width:400px;
+}
+main img{
+  max-width:100%;
+}
+
+.contents-right{
+  padding-left:30px;
+  width:45%;
+  box-sizing: border-box;
+}
+.contents-right h2{
+  margin:0;
+  font-size:16px;
+  border-top:1px solid lightgray;
+  border-bottom:1px solid lightgray;
+  margin-bottom:20px;
+  display:flex;
+  height:60px;
+  align-items:center;
+}
+.contents-right p{
+  font-size:12px;
+  line-height:1.9;
+  margin-bottom:30px;
+}
+.contents-right h3{
+  font-size:12px;
+  font-weight:normal;
+  color:gray;
+  letter-spacing: -1px;
+  margin:40px 0 20px 0;
+}
+.contents-right a{
+  font-size:14px;
+  display:block;
+  background-color:gray;
+  color:white;
+  padding:14px 0;
+  text-align:center;
+  margin:20px 0;
+}
+
+footer{
+  margin-top:50px;
+  font-size:10px;
+  color:gray;
+  text-align: center;
+}
+
+.order-table{
+  width:100%;
+}
+.order-table td{
+  width:50%;
+}
+.order-table td ,.order-table th{
+  border-top:1px solid gray;
+}
+.order-table th,.order-table td{
+  font-weight:normal;
+  padding:10px;
+  border-right:1px solid gray;
+  text-align:center;
+}
+.order-table th:last-child,.order-table td:last-child{
+  border-right: none;
+}
+.order-table .top th{
+  border-top: none;
+}
+.order-table select{
+  width:100%;
+  border: solid 1px #c3c3c3;
+  padding: 0 10px;
+}
+
+.size-table{
+  width:100%;
+}
+.size-table th{
+  background-color:lightgray;
+  font-weight:normal;
+}
+.size-table td,.size-table th{
+  padding:10px;
+  border-right:1px solid gray;
+  border-bottom:1px solid gray;
+  text-align:center;
+}
+
+@media(max-width:896px){
+  header{
+    margin-bottom:0;
+    border-bottom:none;
+    padding:36px 16px 16px 16px;
+  }
+  header .wrapper{
+    overflow-x:scroll;
+  }
+  main .wrapper{
+    flex-direction: column;
+    max-width:800px;
+    margin:0 auto;
+  }
+  main .contents-left{
+    max-width:100%;
+    margin:0 0 10px 0;
+  }
+  main .contents-right{
+    width:100%;
+    padding:0 16px;
+  }
+  main h2{
+    text-align: left;
+    font-size:3vw;
+  }
+  main p{
+    text-align: left;
+    font-size:2.4vw;
+  }
+}
