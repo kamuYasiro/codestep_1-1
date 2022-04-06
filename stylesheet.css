@@ -86,7 +86,7 @@ main img{
   letter-spacing: -1px;
   margin:40px 0 20px 0;
 }
-.contents-right a{
+.contents-right a:nth-of-type(2){
   font-size:14px;
   display:block;
   background-color:gray;
